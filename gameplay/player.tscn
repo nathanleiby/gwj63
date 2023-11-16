@@ -5,18 +5,17 @@
 [ext_resource type="Texture2D" uid="uid://bgprycbqd2tbx" path="res://assets/icon.svg" id="2_rjrb5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_66ud3"]
-size = Vector2(128, 128)
+size = Vector2(64, 64)
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="Area2D" groups=["player"]]
 modulate = Color(0, 1, 0, 1)
-position = Vector2(680, 644)
 script = ExtResource("1_c1k46")
 bullet_scene = ExtResource("2_07iw6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0, 1, 0, 1)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_rjrb5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1)
 shape = SubResource("RectangleShape2D_66ud3")

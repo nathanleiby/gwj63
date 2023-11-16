@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://376og78ruton"]
+[gd_scene load_steps=5 format=3 uid="uid://376og78ruton"]
 
 [ext_resource type="Script" path="res://gameplay/enemy.gd" id="1_jtgac"]
 [ext_resource type="Texture2D" uid="uid://bgprycbqd2tbx" path="res://assets/icon.svg" id="1_uupdj"]
+[ext_resource type="PackedScene" uid="uid://cpmvkeuhe7l4x" path="res://gameplay/bullet.tscn" id="2_aoxon"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_adb2e"]
 size = Vector2(64, 64)
 
 [node name="Enemy" type="Area2D" groups=["enemies"]]
 script = ExtResource("1_jtgac")
+bullet_scene = ExtResource("2_aoxon")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
