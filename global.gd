@@ -11,6 +11,8 @@ const EXPORT_CONFIG_METADATA_SECTION := "metadata"
 const SETTINGS_FILE := "user://settings.cfg"
 const CONFIG_SETTINGS_SECTION := "settings"
 
+enum PathType { STRAIGHT, DIAGONAL_RIGHT, DIAGONAL_LEFT }
+
 func _ready() -> void:
 	print_debug("Global ready")
 	Engine.max_fps = 60

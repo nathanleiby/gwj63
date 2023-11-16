@@ -1,3 +1,4 @@
+class_name Enemy
 extends Area2D
 
 @export var bullet_scene: PackedScene
@@ -12,13 +13,19 @@ var lastFired: float = -1.0
 const SHIP_SIZE: int = 64
 const HALF_SHIP_SIZE = SHIP_SIZE/2
 
+@export var path: Global.PathType
+
+func start(pos: Vector2, new_path: Global.PathType):
+	position = pos
+	path = new_path
+	
 
 func shoot():
 	var now := Time.get_ticks_msec() 
 	if lastFired < 0 or (now - lastFired) > fireIntervalMs:
 		lastFired = now
 		var b: Bullet = bullet_scene.instantiate()		
-		b.start(position + Vector2(0, -HALF_SHIP_SIZE), "enemy")
+		b.start(position + Vector2(0, HALF_SHIP_SIZE), "enemy")
 		get_tree().root.add_child(b)
 				
 
@@ -27,8 +34,16 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	# move
-	# TODO
-	
+	if path == Global.PathType.STRAIGHT:
+		position.y += 1
+	elif path == Global.PathType.DIAGONAL_RIGHT:
+		position.y += sqrt(2)
+		position.x += sqrt(2)
+	elif path == Global.PathType.DIAGONAL_LEFT:
+		position.y += sqrt(2)
+		position.x -= sqrt(2)
+		
+			
 	# shoot
 	shoot()
 

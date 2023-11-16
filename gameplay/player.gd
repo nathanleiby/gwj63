@@ -25,6 +25,7 @@ func shoot():
 		var b: Bullet = bullet_scene.instantiate()		
 		b.start(position + Vector2(0, -HALF_SHIP_SIZE), "player")
 		get_tree().root.add_child(b)
+		
 				
 func get_input(delta: float) -> void:
 	# move

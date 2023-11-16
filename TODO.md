@@ -14,7 +14,7 @@
 ## Explore
 - gameplay
   - [ ] bullets with variable damage
-
+  - [ ] collision does damage
 
 ## Art
 asset vision
