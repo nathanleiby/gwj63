@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk6avman8obfe"]
+
+[ext_resource type="Script" path="res://gameplay/player.gd" id="1_c1k46"]
+[ext_resource type="PackedScene" uid="uid://cpmvkeuhe7l4x" path="res://gameplay/bullet.tscn" id="2_07iw6"]
+[ext_resource type="Texture2D" uid="uid://bgprycbqd2tbx" path="res://assets/icon.svg" id="2_rjrb5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_66ud3"]
+size = Vector2(128, 128)
+
+[node name="Player" type="Area2D"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(680, 644)
+script = ExtResource("1_c1k46")
+bullet_scene = ExtResource("2_07iw6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 0, 1)
+texture = ExtResource("2_rjrb5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_66ud3")
