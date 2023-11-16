@@ -99,7 +99,7 @@ Delete above and fill out your own README!
 
 0. Install Godot 4
 1. Clone the repository
-2. Open up `project.gdot`
+2. Open up `project.godot`
 
 ## Build Exports
 
