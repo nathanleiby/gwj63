@@ -1,15 +1,17 @@
 # TODO
 
 ## Must do
-- [x] Create sense of vertical movement
-  - [x] Create a ground layer (map)
-  - [x] draw a road
-- [ ] show player health
-- [x] enemies shoot bullets
 - [ ] level victory condition
-- [ ] level lose condition
+- [ ] controller support
+- [ ] figure out why spacebar or A on gamepad exits gameplay mode..
+  - [ ] is something still selected?
 
 
+
+
+
+
+----
 
 ## Explore
 - gameplay
@@ -21,6 +23,8 @@
     - slower movement while firing
   - catnip
     - speeds up player - gained by killing enemies
+    - drug feedback: if you take too much you go insane / die / start taking damage
+      - screen colors change, blur, closing black borders
   - choose a cat
     - normal boi - medium speed, medium health, medium damage
     - chonky boi - slow, high health, high damage
