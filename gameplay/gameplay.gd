@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var screensize = get_viewport_rect().size
+@onready var enemies: Node2D = $Enemies
 @onready var background: ColorRect = $Background
 @onready var enemy_spawn_timer: Timer = $EnemySpawnTimer
 
@@ -31,4 +32,8 @@ func _on_enemy_spawn_timer_timeout() -> void:
 	var enemy: Enemy = enemy_scene.instantiate()
 	var pos := Vector2(randi_range(128,256), 64)
 	enemy.start(pos, Global.PathType.STRAIGHT)
-	get_tree().root.add_child(enemy)
+	enemies.add_child(enemy)
+
+
+func _on_player_player_health_changed(new_value: int) -> void:
+	$UI/Health.text = "Health: %d" % new_value

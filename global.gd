@@ -6,6 +6,7 @@ var fullscreen = false
 var version = null
 var show_debug_ui = false
 const SCENE_MAIN_MENU = "res://main_menu/main_menu.tscn"
+const SCENE_GAME_OVER = "res://game_over/game_over.tscn"
 const EXPORT_CONFIG_FILE := "res://export.cfg"
 const EXPORT_CONFIG_METADATA_SECTION := "metadata"
 const SETTINGS_FILE := "user://settings.cfg"
