@@ -107,6 +107,7 @@ text = "Time Left: 30s"
 
 [node name="Paused" parent="." instance=ExtResource("3_w8wrl")]
 visible = false
+z_index = 1
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
