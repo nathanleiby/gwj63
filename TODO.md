@@ -5,7 +5,7 @@
   - [x] Create a ground layer (map)
   - [x] draw a road
 - [ ] show player health
-- [ ] enemies shoot bullets
+- [x] enemies shoot bullets
 - [ ] victory condition
 - [ ] lose condition
 
@@ -15,6 +15,12 @@
 - gameplay
   - [ ] bullets with variable damage
   - [ ] collision does damage
+- hook
+  - catling gun
+    - overheats
+    - slower movement while firing
+  - catnip
+    - speeds up player - gained by killing enemies
 
 ## Art
 asset vision
