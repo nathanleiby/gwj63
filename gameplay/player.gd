@@ -73,5 +73,3 @@ func damage(amount: int):
 func game_over():
 	var root = get_tree().get_root().get_tree()
 	root.change_scene_to_file(Global.SCENE_GAME_OVER)
-
-	pass

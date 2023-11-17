@@ -1,10 +1,11 @@
 # TODO
 
 ## Must do
-- [ ] level victory condition
-- [ ] controller support
 - [ ] figure out why spacebar or A on gamepad exits gameplay mode..
   - [ ] is something still selected?
+- [x] level victory condition
+  - [x] first pass: survive 20
+- [x] controller support
 
 
 
@@ -14,6 +15,11 @@
 ----
 
 ## Explore
+- player rewards
+  - end of level, show achievements
+    - took no damage
+    - defeated all the enemies
+    - (more funny ones, aim for themed naming..)
 - gameplay
   - [ ] bullets with variable damage
   - [ ] collision does damage

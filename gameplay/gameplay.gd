@@ -17,7 +17,8 @@ func _process(_delta: float) -> void:
 	if abs(background.position.y) < (BACKGROUND_HEIGHT - screensize.y):
 		background.position.y -= 1
 	
-
+	$UI/TimeRemaining.text = "Time Left: %d" % ceil($LevelTimer.time_left)
+	
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("pause"):
 		call_deferred("_pause")
@@ -37,3 +38,13 @@ func _on_enemy_spawn_timer_timeout() -> void:
 
 func _on_player_player_health_changed(new_value: int) -> void:
 	$UI/Health.text = "Health: %d" % new_value
+
+
+func game_over():
+	var root = get_tree().get_root().get_tree()
+	root.change_scene_to_file(Global.SCENE_GAME_OVER)
+
+
+func _on_level_timer_timeout() -> void:
+	# TODO: Should be victory tho!
+	game_over()
