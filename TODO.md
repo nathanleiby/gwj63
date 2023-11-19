@@ -1,13 +1,6 @@
 # TODO
 
 ## Must do
-- [ ] figure out why spacebar or A on gamepad exits gameplay mode..
-  - [ ] is something still selected?
-- [x] level victory condition
-  - [x] first pass: survive 20
-- [x] controller support
-
-
 
 
 

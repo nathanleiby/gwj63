@@ -9,10 +9,7 @@ extends Node2D
 
 const BACKGROUND_HEIGHT := 2880 # TODO: get dynamically
 
-func _process(_delta: float) -> void:
-	if Input.is_action_pressed("ui_accept"):
-		get_tree().change_scene_to_file(Global.SCENE_MAIN_MENU)
-	
+func _process(_delta: float) -> void:	
 	# show vertical scroll as long as more background exists
 	if abs(background.position.y) < (BACKGROUND_HEIGHT - screensize.y):
 		background.position.y -= 1
