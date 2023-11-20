@@ -1,9 +1,35 @@
 # TODO
 
-## Must do
+## Must
+- support 2p (must for me)
+- spawn N waves of enemies, of increasing difficulty
+  - aim for 60s gameplay to start
+- cat themed assets
+- Game Over -> You Win screen
 
+## Should
+- abstract background (space)
+- particule effects for life
+- points when you defeat enemies
+- improve UI
+  - Health bar
+  - Time left
+- Start screen polish
+- Game over screen polish
+- sound effects
+  - bullets shooting
+  - ? player movement, engine sounds
+  - play hit
+  - enemy hit
+  - enemy death
+  - cat sounds
 
-
+## Could
+- Juice
+  - flash on hit
+  - explode enemise
+- Mechanic: Catnip
+- Mechanic: Catling gun
 
 ----
 
